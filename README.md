@@ -10,7 +10,7 @@ A local Streamlit application that analyzes PDF and DOCX resumes, detects skills
 - Job-role matching using required-skill coverage and TF-IDF cosine similarity
 - Top-three job recommendations
 - Missing-skill identification and learning roadmap
-- Downloadable text analysis report
+- Downloadable formatted PDF analysis report
 
 ## Technologies Used
 
@@ -64,7 +64,7 @@ The match estimate combines required-skill coverage (70%) and TF-IDF cosine simi
 - `skill_extractor.py` — Skill detection
 - `job_matcher.py` — Job-role scoring and ranking
 - `roadmap_generator.py` — Learning roadmap
-- `report_generator.py` — Text report generation
+- `report_generator.py`— PDF report generation 
 - `data/` — Job-role dataset and skill dictionary
 - `tests/` — Automated tests and test cases
 - `sample_resumes/` — Synthetic sample resume
