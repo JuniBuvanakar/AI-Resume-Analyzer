@@ -84,5 +84,4 @@ This project is intended for educational career guidance. Its scores should not 
 ## Author
 
 V.A.JUNI BUVANAKAR
-
 *junibuvanakar06@gmail.com*
