@@ -1,0 +1,11 @@
+role,description,required_skills,preferred_skills
+Data Analyst,"Analyze structured data, create reports and dashboards, query databases, and communicate insights using Python, SQL, Excel, Pandas and Power BI.",Python|SQL|Excel|Pandas|Power BI,Tableau|Statistics|Data Visualization
+Machine Learning Engineer,"Build, evaluate, package and deploy machine learning models using Python, machine learning, scikit-learn, FastAPI and Docker.",Python|Machine Learning|scikit-learn|FastAPI|Docker,Pandas|SQL|MLflow|AWS
+AI Engineer,"Build AI applications using Python, deep learning, large language models, retrieval augmented generation and APIs.",Python|Deep Learning|LLM|RAG|APIs,Docker|FastAPI|PyTorch|Hugging Face
+NLP Engineer,"Develop natural language processing systems with Python, NLP, transformers and Hugging Face models.",Python|NLP|Transformers|Hugging Face|Machine Learning,PyTorch|APIs|Docker
+Computer Vision Engineer,"Build computer vision applications using Python, OpenCV, convolutional neural networks and YOLO object detection.",Python|OpenCV|CNN|YOLO|Deep Learning,PyTorch|NumPy|Docker
+Python Developer,"Develop Python applications, automate tasks, write tests, use Git and work with APIs and databases.",Python|Git|APIs|SQL|Linux,Docker|FastAPI|PostgreSQL
+Frontend Developer,"Build accessible responsive web interfaces using HTML, CSS and JavaScript, and collaborate using Git.",HTML|CSS|JavaScript|Git|APIs,React|TypeScript|Testing
+Backend Developer,"Develop server-side applications and APIs, work with databases, version control and deployment tools.",Python|APIs|SQL|Git|PostgreSQL,FastAPI|Docker|Linux
+Data Engineer,"Build data pipelines and database workflows using Python, SQL, Pandas and cloud or distributed data tools.",Python|SQL|Pandas|PostgreSQL|Linux,Docker|AWS|Spark
+Business Intelligence Analyst,"Translate business questions into reports and dashboards using SQL, Excel, Power BI and data visualization.",SQL|Excel|Power BI|Data Visualization|Statistics,Python|Pandas|Tableau
