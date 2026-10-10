@@ -1,0 +1,13 @@
+Test ID,Test Case,Expected Result,Actual Result,Status
+TC01,Launch Streamlit application,Application opens in browser,Application opened successfully,Pass
+TC02,Upload valid PDF resume,Resume text is extracted and analyzed,Analysis report generated,Pass
+TC03,Upload valid DOCX resume,Resume text is extracted and analyzed,Analysis report generated,Pass
+TC04,Upload unsupported TXT file,Unsupported file type is rejected,TXT file was not accepted,Pass
+TC05,Upload invalid PDF,Clear error message is displayed,Invalid PDF error displayed,Pass
+TC06,Detect common resume skills,Skills are detected using dictionary,Expected skills detected,Pass
+TC07,Detect skills with special characters,C++ C# and .NET are recognized,All tested skills recognized,Pass
+TC08,Check false-positive skill detection,LLM is not detected from email,Only HTML was detected,Pass
+TC09,Generate job recommendations,Top three roles are displayed,Three recommendations displayed,Pass
+TC10,Generate learning roadmap,Missing required skills are listed,Target-role roadmap generated,Pass
+TC11,Download analysis report,Text report is downloadable,Report downloaded successfully,Pass
+TC12,Run automated tests,All existing tests pass,4 tests passed,Pass
