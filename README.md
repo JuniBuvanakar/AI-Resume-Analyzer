@@ -1,46 +1,86 @@
 # AI Resume Analyzer and Job Recommendation System
 
-A local Streamlit educational application that extracts text from PDF/DOCX resumes, detects skills using a controlled dictionary, compares the resume with job roles using skill coverage and TF-IDF cosine similarity, identifies skill gaps, and suggests a rule-based learning roadmap.
+A local Streamlit application that analyzes PDF and DOCX resumes, detects skills, estimates job-role matches, identifies skill gaps, and recommends a learning roadmap.
+
+## Features
+
+- PDF and DOCX resume upload
+- Resume text extraction and cleaning
+- Skill detection using a controlled dictionary
+- Job-role matching using required-skill coverage and TF-IDF cosine similarity
+- Top-three job recommendations
+- Missing-skill identification and learning roadmap
+- Downloadable text analysis report
+
+## Technologies Used
+
+- Python
+- Streamlit
+- Pandas
+- scikit-learn
+- Plotly
+- PDF and DOCX parsing libraries
 
 ## Requirements
+
 - Python 3.10 or newer
-- Internet connection only for installing packages (the app itself does not require an external AI API)
+- Internet connection to install dependencies
+- No paid AI API required
 
-## Windows setup
-Open Command Prompt in this project folder:
+## Installation and Setup (Windows)
 
-```bat
+Open Command Prompt in the project folder and run each command separately:
+
+```bash
 py -m venv .venv
 .venv\Scripts\activate
 python -m pip install --upgrade pip
 pip install -r requirements.txt
+```
+
+## Run the Application
+
+```bash
 streamlit run app.py
 ```
 
-The app opens in your browser, usually at `http://localhost:8501`.
+Open the local URL shown in the terminal, usually `http://localhost:8501`.
 
-## Scoring method
-`Match estimate = 70% × required-skill coverage + 30% × TF-IDF cosine similarity`, with both components scaled to 0–100. This is a documented project design choice, not a hiring probability and not a formula prescribed by the project guidance.
+## Run Tests
 
-## Limitations
-- Scanned/image-only PDFs may require OCR, which is not included in this baseline.
-- Skill extraction depends on the controlled dictionary and aliases.
-- Skills not detected in the resume may still be possessed by the person.
-- Role requirements are a small manually curated educational dataset, not live job-market data.
-- No uploaded resume is intentionally written to a permanent application folder by this code. Hosting providers and browser/session behavior may have their own data-handling policies.
-
-## Project files
-- `app.py`: Streamlit UI
-- `resume_parser.py`: PDF/DOCX extraction
-- `text_cleaner.py`: text normalization
-- `skill_extractor.py`: controlled dictionary matching
-- `job_matcher.py`: TF-IDF, cosine similarity, role scoring
-- `roadmap_generator.py`: rule-based learning plan
-- `report_generator.py`: downloadable text report
-- `data/`: job roles and skill dictionary
-- `tests/`: unit tests
-
-## Run tests
-```bat
+```bash
 pytest -q
 ```
+
+## Scoring Method
+
+The match estimate combines required-skill coverage (70%) and TF-IDF cosine similarity (30%). Scores are project-defined educational estimates, not hiring probabilities.
+
+## Project Structure
+
+- `app.py` — Streamlit interface
+- `resume_parser.py` — PDF/DOCX text extraction
+- `text_cleaner.py` — Text normalization
+- `skill_extractor.py` — Skill detection
+- `job_matcher.py` — Job-role scoring and ranking
+- `roadmap_generator.py` — Learning roadmap
+- `report_generator.py` — Text report generation
+- `data/` — Job-role dataset and skill dictionary
+- `tests/` — Automated tests and test cases
+- `sample_resumes/` — Synthetic sample resume
+
+## Limitations
+
+- Scanned PDFs may require OCR, which is not included.
+- Skill detection depends on the controlled dictionary and aliases.
+- A missing detected skill does not prove that a person lacks that ability.
+- Job roles and skill requirements come from a small curated dataset, not live job listings.
+- Uploaded resumes are processed within the app session; hosting and browser environments may have their own data-handling policies.
+
+## Responsible Use
+
+This project is intended for educational career guidance. Its scores should not be used as the sole basis for hiring decisions.
+
+## Author
+
+Add your name and academic details here before submission.
