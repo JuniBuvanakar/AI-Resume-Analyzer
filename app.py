@@ -99,8 +99,20 @@ if uploaded:
     else:
         st.success("No undetected required skills for this role based on the current dictionary.")
 
-    report = make_report(uploaded.name, selected_role, selected, found, found_required, missing, results, roadmap)
-    st.download_button("Download analysis report (.txt)", report, file_name="resume_analysis_report.txt", mime="text/plain")
-else:
-    st.markdown("### What you will get")
-    st.markdown("- Extracted resume text\n- Categorized skills detected from the resume\n- Match estimates for at least five job roles\n- Top-three role recommendations\n- Target-role skill gaps\n- A rule-based learning roadmap\n- A downloadable text report")
+    report = make_report(
+        uploaded.name,
+        selected_role,
+        selected,
+        found,
+        found_required,
+        missing,
+        results,
+        roadmap,
+    )
+
+    st.download_button(
+        "Download analysis report (PDF)",
+        data=report,
+        file_name="resume_analysis_report.pdf",
+        mime="application/pdf",
+    )
