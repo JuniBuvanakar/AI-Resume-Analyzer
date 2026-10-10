@@ -1,0 +1,11 @@
+Test ID,Scenario,Expected Result,Actual Result,Status,Notes
+T01,Text-based PDF,Text is extracted,To be completed,Pending,
+T02,DOCX resume,Paragraph text is extracted,To be completed,Pending,
+T03,Technical terms C++ C# .NET,Terms are preserved,To be completed,Pending,
+T04,Known skill aliases,Aliases map to canonical skills,To be completed,Pending,
+T05,Five or more job roles,All roles are compared,To be completed,Pending,
+T06,Top three roles,Three highest-ranked roles shown,To be completed,Pending,
+T07,Missing skills,Undetected required skills shown,To be completed,Pending,
+T08,Invalid or unreadable upload,Helpful error shown,To be completed,Pending,
+T09,Scanned PDF,Low extracted text warning shown,To be completed,Pending,
+T10,Download report,Report downloads with analysis,To be completed,Pending,
